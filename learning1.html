@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understand the grid 'n the display</title>
+
+    <style type="text/css">
+        body{
+            margin: 15px;
+            background: url(./in_content/lightblue_empty.png);
+        }
+
+        /* Info=At the bottom, the parent cite this child(ren) to be independent instead of affecting every one */
+        .grid > div{
+            padding: 4px;
+            border: solid 3px rgb(255, 40, 175);
+            background: rgba(255, 255, 255, 0.605);
+        }
+
+        .grid{
+            display: grid;
+            /* Info=At the bottom, the total of % to 100% may work */
+            grid-template-columns: 300px 500px 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-column-gap: 70px;
+        }
+
+        #child1{
+            grid-column-start: 1;
+            grid-row-start: 5;
+        }
+
+        #child2{
+            grid-column-start: 2;
+            /* span= spread even ... at the bottom */
+            grid-column-end: span 2;
+            grid-row-start: 4;
+        }
+
+        #child3{
+            /* Info= short way to spread about:"grid-row-start" and "grid-row-end" at the bottom... Same way for "column" */
+            grid-row: 3 / span 3;
+            grid-column-start: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Real understand how work the different displays and THE grid &#9863;</h1>
+
+    <section>
+        <h2>Understand the "Display: grid"</h2>
+
+        <dl>
+            <dt>Mainly thanks to the Youtube video= "Tutoriel CSS : display: grid;"</dt>
+            <dt>By= "Grafikart.fr"</dt>
+            <dd>Purpose to discover the new system to grid</dd>
+            <dd>BONUS exercise offer by him: <a href="https://cssgridgarden.com/" target="_blank">https://cssgridgarden.com/</a> (it's in english)</dd>
+        </dl>
+
+        <div class="grid">
+            <div>1.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dicta? Dolorem nulla numquam explicabo sint velit corporis, odio culpa itaque beatae perspiciatis, aliquam incidunt fuga cumque debitis aut soluta autem.</div>
+            <div>2.Possimus fuga minus ducimus, neque omnis deserunt sit quibusdam maiores debitis porro suscipit atque eaque odit sunt odio eligendi accusantium! Neque sapiente facilis corporis doloribus delectus explicabo maxime alias itaque!</div>
+            <div>3.Possimus delectus impedit atque voluptatibus vitae quasi eligendi, dolores, recusandae illum molestiae temporibus in incidunt dolorem debitis officia voluptatum tempore totam libero sed rem soluta quaerat, ipsa tempora. Minus, veniam.</div>
+            <div>4.Recusandae, ullam numquam. Odit a esse necessitatibus. Doloribus, perspiciatis impedit. Minima dolore at architecto reprehenderit tempora reiciendis, expedita beatae, ipsum odit eaque cupiditate totam assumenda ea ex unde a recusandae!</div>
+            <div id="child1">5.Saepe fuga perspiciatis earum rerum, vitae exercitationem ullam. Obcaecati, ex nulla natus veritatis excepturi, qui doloribus voluptatem neque, dolorem nihil provident dicta numquam voluptas dolores. Quis eos corrupti mollitia numquam.</div>
+            <div>6.Nemo sit nam ipsum optio, rem laboriosam vero consectetur necessitatibus voluptatibus porro. Magnam, autem. Sapiente atque dolores delectus. Culpa doloribus quibusdam magni ullam est unde cum non vel praesentium debitis.</div>
+            <div>7.Deserunt amet, eius optio officiis repellat temporibus. Sunt ea voluptatem, enim distinctio veniam, at neque officiis porro soluta odit culpa dolor molestias libero voluptates, temporibus excepturi laudantium quaerat. Nulla, iste!</div>
+            <div>8.Earum magni id odio expedita officiis nemo omnis. Quas ut architecto aliquam culpa delectus ullam quam blanditiis enim maiores dolor modi aut earum laborum, dignissimos adipisci, corporis doloribus minima distinctio!</div>
+            <div id="child2">9.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam officiis laboriosam aut ipsa nam reiciendis, dolor iure nobis in dolorum voluptas fuga praesentium, impedit, voluptates odio dicta rerum doloremque ad?</div>
+            <div id="child3">10.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum aspernatur dolorem commodi aut maiores accusantium, eum placeat. Quisquam culpa ea qui aut ratione quibusdam. Quos harum eos molestias fugiat!</div>
+        </div>
+    </section>
+
+</body>
+</html>
