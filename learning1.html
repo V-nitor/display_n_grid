@@ -23,8 +23,10 @@
             display: grid;
             /* Info=At the bottom, the total of % to 100% may work */
             grid-template-columns: 300px 500px 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(5, 1fr);
             grid-column-gap: 70px;
+            /* WARNING= "grid-auto-flow" allow to change the order of grid's filling. By default it's on "row", but we may change on "column" */
+            /* WARNING= "grid-auto-column" and "grid-auto-rows" allow to create news space when there are news contents unexpected about your rules (px, fr...) */
         }
 
         #child1{
@@ -72,6 +74,22 @@
             <div id="child2">9.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam officiis laboriosam aut ipsa nam reiciendis, dolor iure nobis in dolorum voluptas fuga praesentium, impedit, voluptates odio dicta rerum doloremque ad?</div>
             <div id="child3">10.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum aspernatur dolorem commodi aut maiores accusantium, eum placeat. Quisquam culpa ea qui aut ratione quibusdam. Quos harum eos molestias fugiat!</div>
         </div>
+
+        <article class="news">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor exercitationem nostrum excepturi, reiciendis labore mollitia corporis sed at voluptatibus aut dolorem eum cum dignissimos tempora accusantium minima possimus. Rerum, alias.</p>
+            <p>Obcaecati, magnam accusantium sapiente minus culpa dolore, consectetur ipsa asperiores, delectus quaerat animi maiores dignissimos. Nesciunt, magnam vero soluta nam iure adipisci sint suscipit quam, at esse minus qui est?</p>
+            <p>A rerum explicabo dolore maiores enim sit? Pariatur expedita, quibusdam hic aperiam enim ipsum accusantium minus inventore, magni nisi ipsam quia rerum, veritatis temporibus assumenda fuga impedit eos aliquam labore?</p>
+            <p>Corrupti iusto sit quod corporis! Similique earum nemo sit quam delectus vero eveniet, cupiditate eos veniam nam excepturi porro deleniti adipisci mollitia reiciendis magni, incidunt dolorem sed, nihil facilis quos.</p>
+        </article>
+
+        <aside class="sidebar">
+            <ul>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quo, enim adipisci repudiandae expedita consequatur debitis deleniti ad voluptatem! Voluptas, facere error itaque aut temporibus numquam ipsam cupiditate odit ipsa!</li>
+                <li>Ad ducimus sequi doloribus, tempore sed ipsum quia pariatur eveniet libero modi quis dolore minus inventore corporis illum quod. Sunt et mollitia magni quo ipsam? Id accusantium cumque mollitia consequuntur.</li>
+                <li>Molestias aperiam tenetur sapiente ex, laboriosam hic architecto? Quae earum, officia, provident doloremque sit fugit molestias sunt corrupti minima eius aut labore ea et eaque quas natus aliquid minus obcaecati.</li>
+                <li>Eligendi incidunt iste voluptatibus repudiandae. Facilis incidunt aliquid beatae sequi autem quae. Eum officia numquam iste qui suscipit! Accusamus iste odio ipsam atque perspiciatis sapiente nisi amet velit libero aperiam.</li>
+            </ul>
+        </aside>
     </section>
 
 </body>
