@@ -46,6 +46,48 @@
             grid-row: 3 / span 3;
             grid-column-start: 2;
         }
+
+        h3{
+            text-align: center;
+            font-size: 2rem;
+            color:rgb(255, 40, 40);
+            text-shadow: 0px 0px 10px rgb(255, 40, 40);
+            box-shadow: 0px 0px 30px rgb(255, 40, 40);
+        }
+
+        /* ----- NEXT TRY ----- */
+
+        .grid_2{
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            grid-template-rows: 100px 1fr 50px;
+            grid-gap: 1px;
+            grid-template-areas:
+            "intro intro"
+            "sidebar news"
+        }
+
+        .intro,
+        .news,
+        .sidebar{
+            border: 2px solid;
+            padding: 5px;
+        }
+
+        .intro{
+            grid-area: intro;
+            grid-column: 1 / span 2;
+            font-size: 17px;
+            text-align: right;
+        }
+
+        .news{
+            grid-area: news;
+        }
+
+        .sidebar{
+            grid-area: sidebar;
+        }
     </style>
 </head>
 <body>
@@ -75,21 +117,28 @@
             <div id="child3">10.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatum aspernatur dolorem commodi aut maiores accusantium, eum placeat. Quisquam culpa ea qui aut ratione quibusdam. Quos harum eos molestias fugiat!</div>
         </div>
 
-        <article class="news">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor exercitationem nostrum excepturi, reiciendis labore mollitia corporis sed at voluptatibus aut dolorem eum cum dignissimos tempora accusantium minima possimus. Rerum, alias.</p>
-            <p>Obcaecati, magnam accusantium sapiente minus culpa dolore, consectetur ipsa asperiores, delectus quaerat animi maiores dignissimos. Nesciunt, magnam vero soluta nam iure adipisci sint suscipit quam, at esse minus qui est?</p>
-            <p>A rerum explicabo dolore maiores enim sit? Pariatur expedita, quibusdam hic aperiam enim ipsum accusantium minus inventore, magni nisi ipsam quia rerum, veritatis temporibus assumenda fuga impedit eos aliquam labore?</p>
-            <p>Corrupti iusto sit quod corporis! Similique earum nemo sit quam delectus vero eveniet, cupiditate eos veniam nam excepturi porro deleniti adipisci mollitia reiciendis magni, incidunt dolorem sed, nihil facilis quos.</p>
-        </article>
+        <h3>Next try</h3>
 
-        <aside class="sidebar">
-            <ul>
-                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quo, enim adipisci repudiandae expedita consequatur debitis deleniti ad voluptatem! Voluptas, facere error itaque aut temporibus numquam ipsam cupiditate odit ipsa!</li>
-                <li>Ad ducimus sequi doloribus, tempore sed ipsum quia pariatur eveniet libero modi quis dolore minus inventore corporis illum quod. Sunt et mollitia magni quo ipsam? Id accusantium cumque mollitia consequuntur.</li>
-                <li>Molestias aperiam tenetur sapiente ex, laboriosam hic architecto? Quae earum, officia, provident doloremque sit fugit molestias sunt corrupti minima eius aut labore ea et eaque quas natus aliquid minus obcaecati.</li>
-                <li>Eligendi incidunt iste voluptatibus repudiandae. Facilis incidunt aliquid beatae sequi autem quae. Eum officia numquam iste qui suscipit! Accusamus iste odio ipsam atque perspiciatis sapiente nisi amet velit libero aperiam.</li>
-            </ul>
-        </aside>
+        <main class="grid_2">
+            <header class="intro">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic exercitationem quasi nulla voluptatibus expedita dolores rerum perferendis non fugiat deleniti, qui beatae obcaecati eius doloribus fuga ex dolor consequuntur officia.</p>
+            </header>
+            <article class="news">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor exercitationem nostrum excepturi, reiciendis labore mollitia corporis sed at voluptatibus aut dolorem eum cum dignissimos tempora accusantium minima possimus. Rerum, alias.</p>
+                <p>Obcaecati, magnam accusantium sapiente minus culpa dolore, consectetur ipsa asperiores, delectus quaerat animi maiores dignissimos. Nesciunt, magnam vero soluta nam iure adipisci sint suscipit quam, at esse minus qui est?</p>
+                <p>A rerum explicabo dolore maiores enim sit? Pariatur expedita, quibusdam hic aperiam enim ipsum accusantium minus inventore, magni nisi ipsam quia rerum, veritatis temporibus assumenda fuga impedit eos aliquam labore?</p>
+                <p>Corrupti iusto sit quod corporis! Similique earum nemo sit quam delectus vero eveniet, cupiditate eos veniam nam excepturi porro deleniti adipisci mollitia reiciendis magni, incidunt dolorem sed, nihil facilis quos.</p>
+            </article>
+    
+            <aside class="sidebar">
+                <ul>
+                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quo, enim adipisci repudiandae expedita consequatur debitis deleniti ad voluptatem! Voluptas, facere error itaque aut temporibus numquam ipsam cupiditate odit ipsa!</li>
+                    <li>Ad ducimus sequi doloribus, tempore sed ipsum quia pariatur eveniet libero modi quis dolore minus inventore corporis illum quod. Sunt et mollitia magni quo ipsam? Id accusantium cumque mollitia consequuntur.</li>
+                    <li>Molestias aperiam tenetur sapiente ex, laboriosam hic architecto? Quae earum, officia, provident doloremque sit fugit molestias sunt corrupti minima eius aut labore ea et eaque quas natus aliquid minus obcaecati.</li>
+                    <li>Eligendi incidunt iste voluptatibus repudiandae. Facilis incidunt aliquid beatae sequi autem quae. Eum officia numquam iste qui suscipit! Accusamus iste odio ipsam atque perspiciatis sapiente nisi amet velit libero aperiam.</li>
+                </ul>
+            </aside>
+        </main>
     </section>
 
 </body>
