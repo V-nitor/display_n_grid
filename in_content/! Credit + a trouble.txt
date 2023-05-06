@@ -1,0 +1,3 @@
+.The "lightblue_empty.png" owned by Pieter Kuiper (https://fr.m.wikipedia.org/wiki/Fichier:Lightblue_empty_grid.svg)
+
+Note= trouble in "grid_3" for display: inline-grid; thx :'(
