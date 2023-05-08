@@ -1,3 +1,18 @@
 .The "lightblue_empty.png" owned by Pieter Kuiper (https://fr.m.wikipedia.org/wiki/Fichier:Lightblue_empty_grid.svg)
 
+.The "canard-touffu-oiseau.jpg" owned by JonPauling (https://pixabay.com/fr/photos/canard-canard-touffu-oiseau-7938454/)
+.The "cat-1423_256.gif" owned by Winterflower (https://pixabay.com/fr/gifs/chat-la-fenêtre-nuit-étoiles-1423/)
+.The "birds-in-love.jpg" owned by Atky (https://pixabay.com/fr/illustrations/birds-couple-branche-séance-amour-5770589/)
+.The "bird-3441_256.gif" owned by JuliusH (https://pixabay.com/fr/gifs/oiseau-oiseau-chanteur-printemps-3441/)
+
+.The "pexels-jean-van-der-meulen-1526410.jpg" owned by Jean Van der Meulen (https://www.pexels.com/fr-fr/photo/oiseau-brun-et-gris-1526410/)
+.The "pexels-francesco-1804976.jpg" owned by Francesco (https://www.pexels.com/fr-fr/photo/chouette-blanche-et-noire-1804976/)
+.The "pexels-jacqueline-smith-788655.jpg" owned by Jacqueline Smith (https://www.pexels.com/photo/selective-focus-photography-of-pink-flamingo-788655/)
+.The "pexels-dsd-1010262.jpg" owned by DSD (https://www.pexels.com/photo/orange-and-white-bird-face-1010262/)
+
+.The "paulo-brandao-unsplash.jpg" owned by Paulo Brandao (https://unsplash.com/fr/photos/YLgTmdb7r1o?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+.The "mark-olsen-unsplash.jpg" owned by Mark Olsen (https://unsplash.com/fr/photos/tjZPseTxe6k?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+.The "emily-sevenoaks-unsplash.jpg" owned by Emily Sevenoaks (https://unsplash.com/fr/photos/AnRH51dbaEY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+.The "david-clode-unsplash.jpg" owned by David Clode (https://unsplash.com/fr/photos/7_TTPznVIQI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+
 Note= trouble in "grid_3" for display: inline-grid; thx :'(
