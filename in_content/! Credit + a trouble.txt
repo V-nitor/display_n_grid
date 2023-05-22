@@ -15,4 +15,4 @@
 .The "emily-sevenoaks-unsplash.jpg" owned by Emily Sevenoaks (https://unsplash.com/fr/photos/AnRH51dbaEY?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 .The "david-clode-unsplash.jpg" owned by David Clode (https://unsplash.com/fr/photos/7_TTPznVIQI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
 
-Note= trouble in "grid_3" for display: inline-grid; thx :'(
+Note= I cannot repair this "display: inline-grid;" in "grid_3"... HELP ME PLS! T.T

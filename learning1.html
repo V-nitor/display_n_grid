@@ -8,8 +8,12 @@
 
     <style type="text/css">
         body{
-            margin: 15px;
+            margin: 4rem 15px 20rem 15px;
             background: url(./in_content/lightblue_empty.png);
+        }
+
+        h1{
+            font-size: 50px;
         }
 
         /* Info=At the bottom, the parent cite this child(ren) to be independent instead of affecting every one */
@@ -45,6 +49,10 @@
             /* Info= short way to spread about:"grid-row-start" and "grid-row-end" at the bottom... Same way for "column" */
             grid-row: 3 / span 3;
             grid-column-start: 2;
+        }
+
+        h2{
+            color: rgb(1, 35, 170);
         }
 
         h3{
@@ -119,6 +127,10 @@
             background:rgb(0, 0, 0)
         }
 
+        .essential_detail{
+            color:rgb(125, 0, 140)
+        }
+
         /* ----- Last lesson display-grid ----- */
 
         .grid_4{
@@ -132,6 +144,7 @@
 
         #why{
             text-align: center;
+            margin-bottom: 43px;
             color:rgb(130, 120, 120);
             font-size: 25px;
             text-decoration: underline;
@@ -140,15 +153,52 @@
 
         /* ----- The Display: "block", "inline-block" and "inline" ----- */
 
-        .test_block{
-
-            /* Info= At the bottom, this display it's by default in html */
+        #test_block_top{
+            /* Info= At the bottom, this display is by default for the "paragraph" for example */
             display: block;
-            background: rgb(85, 255, 65);
+            background: rgba(85, 255, 65, 0.460);
+            width: 500px;
+            height: 150px;
+            margin: 45px 100px 100px 100px;
+            padding: 30px;
+        }
+
+        .test_block_center{
+            background: rgba(85, 255, 65, 0.460);
             width: 500px;
             height: 150px;
             margin: 100px;
             padding: 30px;
+        }
+
+        #test_block_bottom{
+            background: rgba(84, 255, 65, 0.460);
+            width: 500px;
+            height: 150px;
+            margin: 100px 100px 0px 100px;
+            padding: 30px;
+        }
+
+        a{
+            /* Info= At the bottom, this display is by default for the "hypertext anchor" for instance. Useless to change the "height" and the "width" */
+            display: inline;
+            background: rgba(215, 245, 65, 0.460);
+            margin: 125px;
+        }
+
+        #special_anchor{
+            padding: 125px;
+        }
+
+        button{
+            /* Info= At the bottom, this display is by default for the "button" for example. You can change the "height" and the "width" with this display */
+            display: inline-block;
+            background: rgb(255, 190, 40);
+            padding: 50px 2px;
+        }
+
+        #last_section{
+            margin-bottom: 10rem;
         }
     </style>
 </head>
@@ -160,8 +210,8 @@
         <h2>Understand the "Display: grid"</h2>
 
         <dl>
-            <dt>Mainly thanks to the Youtube video= "Tutoriel CSS : display: grid;"</dt>
-            <dt>By= "Grafikart.fr"</dt>
+            <dt>Mainly thanks to the Youtube video= <em>"Tutoriel CSS : display: grid;"</em></dt>
+            <dt>By= <u>"Grafikart.fr"</u></dt>
             <dd>Purpose to discover the new system to grid</dd>
             <dd>BONUS exercise offer by him: <a href="https://cssgridgarden.com/" target="_blank">https://cssgridgarden.com/</a> (it's in english)</dd>
         </dl>
@@ -241,12 +291,17 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae nihil dolore et, pariatur numquam soluta qui inventore ullam incidunt earum sit ipsam facere, tempore error! Pariatur quam doloremque consequuntur, minus impedit distinctio, odio, similique veniam dignissimos velit nemo autem. Quam, aliquam. Debitis ut iste repellat voluptatibus accusamus nostrum quibusdam ducimus quas, adipisci tempora maiores soluta laboriosam nobis sequi odit asperiores deleniti ipsa, at a sunt est. Repellendus nobis eaque ratione voluptates illo culpa ipsum maiores eos quia odit natus, ducimus neque iusto. Vero enim pariatur praesentium doloribus aliquid. Delectus, dignissimos? Soluta architecto quasi blanditiis ad doloribus fugiat repudiandae libero impedit!</p>
     </section>
 
+    <aside>
+        <dt class="essential_detail"><strong>Clues to try fix the trouble no resolve:</strong></dt>
+        <a href="https://www.js-craft.io/blog/how-display-inline-grid-works-in-css-and-how-is-different-from-display-grid/" target="_blank">The "inline-grid"</a>
+    </aside>
+
     <section>
         <h2>Last lesson to "Display: grid"</h2>
 
         <dl>
-            <dt>Mainly thanks to the Youtube video= "CSS Grid : Créer une galerie"</dt>
-            <dt>By= "École du Web"</dt>
+            <dt>Mainly thanks to the Youtube video= <em>"CSS Grid : Créer une galerie"</em></dt>
+            <dt>By= <u>"École du Web"</u></dt>
             <dd>To create a gallery thanks to grid</dd>
         </dl>
 
@@ -268,20 +323,26 @@
         <p id="why">&#9757; I have no idea how I did ??! &#9757;</p>
     </section>
 
-    <section>
+    <section id="last_section">
         <h2>Learn the "Display: block", "inline-block" and once again the "Inline"</h2>
 
         <dl>
-            <dt>Mainly thanks to the Youtube video= "Propriété Display en CSS : Block, Inline et Inline-Block"</dt>
-            <dt>By= "CodewithSabri"</dt>
+            <dt>Mainly thanks to the Youtube video= <em>"Propriété Display en CSS : Block, Inline et Inline-Block"</em></dt>
+            <dt>By= <u>"CodewithSabri"</u></dt>
             <dd>Other posting(/display) properties to know</dd>
         </dl>
 
-        <p class="test_block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nobis? Nostrum, illo? Delectus ipsam necessitatibus sequi soluta ullam vel dignissimos.</p>
-        <p class="test_block">Ipsum earum et necessitatibus laboriosam velit quod eveniet inventore ex, maxime, neque nisi autem aut, beatae quidem est nesciunt molestias.</p>
-        <p class="test_block">Fugiat reprehenderit cumque repellendus possimus tenetur. Ipsam vel et, ipsa ipsum magnam nobis exercitationem accusamus, vitae incidunt, sed non neque.</p>
-        <p class="test_block">Voluptatem, maiores. Pariatur quia rem odio ipsam natus culpa, quisquam corrupti dolorem ad omnis, perspiciatis placeat laboriosam, dolores architecto quibusdam.</p>
-        <p class="test_block">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid beatae est voluptatibus ipsa nulla assumenda, autem impedit facilis eos culpa reprehenderit eum vel, ex eius!</p>
+        <p id="test_block_top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, nobis? Nostrum, illo? Delectus ipsam necessitatibus sequi soluta ullam vel dignissimos.</p>
+        <p class="test_block_center">Ipsum earum et necessitatibus laboriosam velit quod eveniet inventore ex, maxime, neque nisi autem aut, beatae quidem est nesciunt molestias.</p>
+        <p class="test_block_center">Fugiat reprehenderit cumque repellendus possimus tenetur. Ipsam vel et, ipsa ipsum magnam nobis exercitationem accusamus, vitae incidunt, sed non neque.</p>
+        <p class="test_block_center">Voluptatem, maiores. Pariatur quia rem odio ipsam natus culpa, quisquam corrupti dolorem ad omnis, perspiciatis placeat laboriosam, dolores architecto quibusdam.</p>
+        <p id="test_block_bottom">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid beatae est voluptatibus ipsa nulla assumenda, autem impedit facilis eos culpa reprehenderit eum vel, ex eius!</p>
+
+        <a href="#">My own website</a>
+        <a href="#">My own website</a>
+        <a href="#" id="special_anchor">My own website</a>
+
+        <button type="button" name="button">There are nothing</button>
     </section>
 
 </body>
